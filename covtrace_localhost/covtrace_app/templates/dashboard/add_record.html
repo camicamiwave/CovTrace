@@ -1,0 +1,138 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+
+
+<html>
+    <head>
+        <title>COVTRACE - Add Patients</title> 
+    </head>
+
+    <header>
+        <style>
+            body {margin: 0;}
+        
+            .header {
+            padding: 5px;
+            text-align: left;
+            background: #16243a;
+            color: white;
+            line-height: 10px;
+            }
+            .line {
+            padding: 3px;
+            text-align: right;
+            background: #a4b0be;
+            line-height: 5px;
+            }
+            .line1 {
+            padding: 1px;
+            text-align: right;
+            background: #16243a;
+            color: white;
+            line-height: 1px;
+            }
+            .line2 {
+            padding: 3px;
+            background: #265386;
+            line-height: 3px;
+            } 
+        </style> 
+        <style>
+
+            .dropbtn {
+                background-color: #364661;
+                color: white;
+                padding: 10px 100px;
+                font-size: 12px;
+                border: none;
+            }
+    
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+    
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+    
+            .dropdown-content a {
+                color: black;
+                padding: 12px 65px;
+                text-decoration: none;
+                display: block;
+                transition: 0.5s;
+            }
+    
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+    
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+    
+            .dropdown:hover .dropbtn {
+                background-color: #16243a;
+            }
+    
+        </style>
+        <style>
+            .background {
+              padding: 1px;
+              text-align: left;
+              background: #364661;
+            }
+            
+        </style>
+        <div class="background">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="{% url 'home' %}" style="color: rgb(255, 255, 255);">Home</a></button>
+                <button class="dropbtn"><a href="{% url 'content' %}" style="color: rgb(255, 255, 255);">Map</a></button>
+                <button class="dropbtn"><a href="{% url 'record' %}" style="color: rgb(255, 255, 255);">Add Record</a></button>
+            </div>
+        </div>
+        </section> 
+
+    </header>
+
+    <body> 
+        <br> 
+
+        <a href="{% url 'home' %}"><h1 style="font-family:verdana;">ADD PATIENT</h1></a>
+        <form action="{% url 'record' %}" method="POST">
+            {% csrf_token %}
+            <label for='name'>Name:</label><br>
+            <input type="Text" id="name" name="name"><br><br>
+            
+            <label for='birthday'>Birthday:</label><br>
+            <input type="Text" id="birthday" name="birthday"><br><br>
+
+            <label for='age'>Age:</label><br>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for='gender'>Gender:</label><br>
+            <input type="Text" id="gender" name="gender"><br><br>
+
+            <label for='barangay'>Barangay:</label><br>
+            <input type="Text" id="barangay" name="barangay"><br><br>
+
+            <label for='status'>Status:</label><br>
+            <input type="Text" id="status" name="status"><br><br>
+
+            <input type="Submit" value="Submit">
+        </form>
+        <br>
+        <br> 
+
+    </body>
+
+</html>
