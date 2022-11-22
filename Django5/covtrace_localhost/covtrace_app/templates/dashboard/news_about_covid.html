@@ -1,0 +1,254 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color:#131736 ;
+        }
+        h1 {
+            color: white;
+            position: absolute;
+            width: 727px;
+            height: 78px;
+            left: 120px;
+            top: 89px;
+            font-style: 'Josefin Sans';
+        }
+
+        .news1 {
+            position: absolute;
+            width: 304px;
+            height: 206.93px;
+            left: 139px;
+            top: 213px;
+        }
+
+        .news11 {
+            position: absolute;
+            width: 727px;
+            height: 95px;
+            left: 533px;
+            top: 234px;
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+
+        .news2 {
+            position: absolute;
+            width: 328px;
+            height: 200px;
+            left: 126px;
+            top: 464px; 
+        }
+
+        .news22 {
+            position: absolute;
+            width: 727px;
+            height: 78px;
+            left: 520px;
+            top: 500px;
+
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+
+            color: #FFFFFF;
+        }
+
+        .news3 {
+            position: absolute;
+            width: 328px;
+            height: 227px;
+            left: 126px;
+            top: 720px;
+        }
+
+        .news33 {
+            position: absolute;
+            width: 727px;
+            height: 126px;
+            left: 520px;
+            top: 757px;
+
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+
+            color: #FFFFFF;
+        }
+        
+        .news4 {
+            position: absolute;
+            width: 339px;
+            height: 219px;
+            left: 120px;
+            top: 1015px;
+        }
+
+        .news44 {
+            position: absolute;
+            width: 727px;
+            height: 179px;
+            left: 520px;
+            top: 1020px;
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+
+            color: #FFFFFF;
+        }
+
+        .news5 {
+            position: absolute;
+            width: 350px;
+            height: 232px;
+            left: 115px;
+            top: 1313px;
+        }
+
+        .news55 {
+            position: absolute;
+            width: 727px;
+            height: 179px;
+            left: 520px;
+            top: 1310px;
+
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+
+            color: #FFFFFF;
+        }
+
+        .news6 {
+            position: absolute;
+            width: 368px;
+            height: 240px;
+            left: 106px;
+            top: 1624px;
+        }
+
+        .news66 {
+            position: absolute;
+            width: 727px;
+            height: 179px;
+            left: 520px;
+            top: 1620px;
+
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            text-decoration-line: underline;
+
+            color: #FFFFFF;
+        }
+
+        .logo-margin{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .home-btn-margin{
+            margin-top: 190px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        } 
+
+        .menu-btn-margin{
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        }
+
+    </style> 
+    <head>
+        <title>CovTrace</title>
+        <link rel="icon" href="{% static 'covtrace_app/images/logo.png' %}"/>
+        <link href="C:\Users\USER\PycharmProjects\pythonProject\COVTRACE\AboutCovid\.news_about_covid.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <!--PARA SA LOGO 'TONG div class na 'to-->
+        <div class="logo-margin">
+            <!--PICTURE NG LOGO-->
+            <img src="{% static 'covtrace_app/images/logo.png' %}" alt="CovTrace" width="20" style="float: center;">
+        </div>
+        <div class="home-btn-margin">
+            <a href="{% url 'home' %}"><img src="{% static 'covtrace_app/images/home.png' %}" alt="CovTrace" width="30" style="float: center;"></a>
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/megaphone.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/tv.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/location.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/mgatao.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        
+        <h1>COVID-19 PHILIPPINES</h1>
+
+        <!--PICTURE NONG CONTENT-->
+        <img class="news1" src="{% static 'covtrace_app/images/news1.png' %}" alt="NEWS">
+        <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2022/10/22/philippines-logs-1702-new-covid-19-cases-and-36-more-deaths-on-saturday-oct-22">
+            <h1 class="news11">Philippine logs 1,702 new COVID-19 Cases and 36 more deaths on Saturday (Oct22)</h1>
+        </a>
+        
+        <img class="news2" src="{% static 'covtrace_app/images/news2.png' %}" alt="NEWS"> 
+        <a href="https://www.msn.com/en-ph/news/national/philippines-posts-11995-new-covid-19-cases-from-oct-17-23-down-by-22-25/ar-AA13jmgK">
+            <h1 class="news22">Philippines posts 11,995 new COVID-19 cases from Oct. 17-23, down by 22%</h1>
+        </a>
+        
+        <img class="news3" src="{% static 'covtrace_app/images/news3.png' %}" alt="NEWS"> 
+        <a href="https://in.investing.com/news/covid-pandemic-not-yet-over-who-official-3386224">
+            <h1 class="news33">COVID pandemic not yet over: WHO Official</h1>
+        </a>
+
+        <img class="news4" src="{% static 'covtrace_app/images/news4.png' %}" alt="NEWS"> 
+        <a href="https://newsinfo.inquirer.net/1690397/ph-daily-covid-19-cases-may-drop-to-less-than-500-by-end-of-november-octa">
+            <h1 class="news44">PH daily COVID-19 cases may drop to less than 500 by end of November — OCTA</h1>
+        </a>
+
+        
+        <img class="news5" src="{% static 'covtrace_app/images/news5.png' %}" alt="NEWS"> 
+        <a href="https://www.gmanetwork.com/news/topstories/nation/850596/philippines-logs-6-346-new-covid-19-cases-from-october-31-to-november-6/story/">
+            <h1 class="news55">Philippines logs 6,346 new COVID-19 cases from October 31 to November 6</h1>
+        </a>
+
+        <img class="news6" src="{% static 'covtrace_app/images/news6.png' %}" alt="NEWS"> 
+        <a href="https://news.yahoo.com/chinas-covid-epicentre-shifts-guangzhou-031859197.html">
+            <h1 class="news66">Philippines logs 6,346 new COVID-19 cases from October 31 to November 6</h1>
+        </a>
+
+    </body>
+    </html>

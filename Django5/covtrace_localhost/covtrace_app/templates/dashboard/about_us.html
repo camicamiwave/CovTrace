@@ -1,0 +1,593 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: #131736;
+        }
+
+        h2 {
+            color: white;
+            position: absolute;
+            width: 727px;
+            height: 78px;
+            left: 120px;
+            top: 12px;
+            font-style: 'Josefin Sans';
+        }
+
+        h1 {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 335px;
+            height: 84px;
+            left: 547px;
+            top: 90px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+
+            color: #FFFFFF;
+        }
+
+        .who-are-we {
+            position: absolute;
+            width: 89px;
+            height: 23px;
+            left: 447px;
+            top: 218px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+
+        .our-motivations {
+            position: absolute;
+            width: 111px;
+            height: 23px;
+            left: 565px;
+            top: 218px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+
+        .meet-the-team {
+            position: absolute;
+            width: 114px;
+            height: 23px;
+            left: 728px;
+            top: 218px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+
+        .contact-us {
+            position: absolute;
+            width: 111px;
+            height: 23px;
+            left: 882px;
+            top: 218px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+
+        .WAW-2 {
+            position: absolute;
+            width: 256px;
+            height: 34px;
+            left: 158px;
+            top: 285px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #FFFFFF;
+        }
+
+        .waw-content {
+            position: absolute;
+            text-align: center;
+            width: 956px;
+            height: 363px;
+            left: 223px;
+            top: 377px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+
+            color: #FFFFFF;
+        }
+
+        .OM-2 {
+            position: absolute;
+            width: 320px;
+            height: 34px;
+            left: 158px;
+            top: 700px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #FFFFFF;
+        }
+
+        .om-content {
+            position: absolute;
+            text-align: center;
+            width: 959px;
+            height: 370px;
+            left: 216px;
+            top: 800px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+
+            color: #FFFFFF;
+        }
+
+        .MTT-2 {
+            position: absolute;
+            width: 320px;
+            height: 34px;
+            left: 158px;
+            top: 1124px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #FFFFFF;
+        }
+
+        .mtt-content {
+            position: absolute;
+            text-align: center;
+            width: 642px;
+            height: 36px;
+            left: 318px;
+            top: 1195px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #FFFFFF;
+        }
+
+        .logo-margin{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .home-btn-margin{
+            margin-top: 190px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        } 
+
+        .menu-btn-margin{
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        }
+
+        .abina {
+            position: absolute;
+            width: 108px;
+            height: 102px;
+            left: 150px;
+            top: 1263px;
+            border-radius: 90px;
+
+        }
+
+        .arvin-abina {
+
+            position: absolute;
+            width: 315px;
+            height: 30px;
+            left: 280px;
+            top: 1288px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #FFFFFF;
+
+
+        }
+
+        .abina-content {
+            position: absolute;
+            width: 585px;
+            height: 141px;
+            left: 450px;
+            top: 1400px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .janjan {
+            position: absolute;
+            width: 108px;
+            height: 102px;
+            left: 1031px;
+            top: 1690px;
+            border-radius: 90px;
+        }
+
+        .janjan-albos {
+            position: absolute;
+            width: 315px;
+            height: 30px;
+            left: 450px;
+            top: 1725px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #FFFFFF;
+        }
+
+        .janjan-content {
+            position: absolute;
+            text-align: right;
+            width: 585px;
+            height: 141px;
+            left: 400px;
+            top: 1850px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .camila {
+            position: absolute;
+            width: 108px;
+            height: 102px;
+            left: 150px;
+            top: 2150px;
+            border-radius: 90px;
+        }
+
+        .camila-binas {
+            position: absolute;
+            width: 339px;
+            height: 30px;
+            left: 280px;
+            top: 2180px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #FFFFFF;
+        }
+
+        .camila-content {
+            position: absolute;
+            width: 585px;
+            height: 141px;
+            left: 450px;
+            top: 2310px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .sean {
+            position: absolute;
+            width: 108px;
+            height: 102px;
+            left: 1031px;
+            top: 2640px;
+            border-radius: 90px;
+        }
+
+        .sean-borje {
+            position: absolute;
+            width: 315px;
+            height: 30px;
+            left: 400px;
+            top: 2680px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+
+            color: #FFFFFF;
+        }
+        
+        .sean-content {
+            position: absolute;
+            text-align: right;
+            width: 585px;
+            height: 141px;
+            left: 390px;
+            top: 2800px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .xenia {
+            position: absolute;
+            width: 108px;
+            height: 102px;
+            left: 150px;
+            top: 3090px;
+            border-radius: 90px;
+        }
+
+        .xenia-velacruz {
+            position: absolute;
+            width: 421px;
+            height: 30px;
+            left: 280px;
+            top: 3120px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #FFFFFF;
+        }
+
+        .xenia-content {
+            position: absolute;
+            width: 585px;
+            height: 141px;
+            left: 450px;
+            top: 3250px;
+
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+        }
+
+        .CU-2 {
+            position: absolute;
+            width: 320px;
+            height: 34px;
+            left: 158px;
+            top: 3500px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #FFFFFF;
+        }
+
+        .logo-margin{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .home-btn-margin{
+            margin-top: 190px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        } 
+
+        .menu-btn-margin{
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-bottom: 50px; 
+        }
+    </style>
+    <head>
+        <title>CovTrace - ABOUT US</title>
+        <link rel="icon" href="{% static 'covtrace_app/images/logo.png' %}"/>
+    </head>
+    <body>
+        <!--PARA SA LOGO 'TONG div class na 'to-->
+        <div class="logo-margin">
+            <!--PICTURE NG LOGO-->
+            <img src="{% static 'covtrace_app/images/logo.png' %}" alt="CovTrace" width="20" style="float: center;">
+        </div>
+        <div class="home-btn-margin">
+            <a href="{% url 'home' %}"><img src="{% static 'covtrace_app/images/home.png' %}" alt="CovTrace" width="30" style="float: center;"></a>
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/megaphone.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/tv.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/location.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        <div class="menu-btn-margin">
+            <img src="{% static 'covtrace_app/images/mgatao.png' %}" alt="CovTrace" width="30" style="float: center;">
+        </div>
+        
+        <h2>CovTrace</h2>
+        <h1>ABOUT US</h1>
+        <div class="who-are-we">
+            <h4>Who Are We</h4>
+        </div>
+
+        <div class="our-motivations">
+            <h4>Our Motivations</h4>
+        </div>
+
+        <div class="meet-the-team">
+            <h4>Meet the Team</h4>
+        </div>
+
+        <div class="contact-us">
+            <h4>Our Motivations</h4>
+        </div>
+        
+        <div class="WAW-2">
+            <h5>Who Are We</h5>
+        </div>
+
+        <div class="waw-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="OM-2">
+            <h5>Our Motivations</h5>
+        </div>
+
+        <div class="om-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="MTT-2">
+            <h5>Meet the Team</h5>
+        </div>
+
+        <div class="mtt-content">
+            <h5>Get to know more about the developers of the website</h5>
+        </div>
+
+        <div class="abina">
+            <img src="{% static 'covtrace_app/images/abina.png' %}" alt="Arvin Abina" style="float: center;">
+        </div>
+
+        <div class="arvin-abina">
+            <h2>Arvin C. Abina</h2>
+        </div>
+
+        <div class="abina-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="janjan">
+            <img src="{% static 'covtrace_app/images/janjan.png' %}" alt="John Erwin Albos" style="float: center;">
+        </div>
+
+        <div class="janjan-albos">
+            <h2>John Erwin S. Albos</h2>
+        </div>
+
+        <div class="janjan-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="camila">
+            <img src="{% static 'covtrace_app/images/camila.png' %}" alt="Camila G. Biñas" style="float: center;">
+        </div>
+
+        <div class="camila-binas">
+            <h2>Camila G. Biñas</h2>
+        </div>
+
+        <div class="camila-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="sean">
+            <img src="{% static 'covtrace_app/images/sean.png' %}" alt="Sean Michael Borje" style="float: center;">
+        </div>
+
+        <div class="sean-borje">
+            <h2>Sean Michael A. Borje</h2>
+        </div>
+
+        <div class="sean-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="xenia">
+            <img src="{% static 'covtrace_app/images/xenia.png' %}" alt="Xenia Angelica Velacruz" style="float: center;">
+        </div>
+
+        <div class="xenia-velacruz ">
+            <h2>Xenia Angelica D. Velacruz</h2>
+        </div>
+
+        <div class="xenia-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+        </div>
+
+        <div class="CU-2">
+            <h5>Contact Us</h5>
+        </div>
+    </body>
+</html>
