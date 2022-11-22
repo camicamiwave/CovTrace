@@ -1,0 +1,7 @@
+<h1>Patients Database<h1>
+
+    {% for patient in all %}
+        <p>{{ patient.name }} {{ patient.age }} {{ patient.birthday }}<br>{{ patient.gender }}</p>
+    {% endfor %}
+    
+    
