@@ -4,6 +4,7 @@ This system is a web application that collects and disseminates information abou
 
 # ABOUT US:
 QuaranTeam
+
  Abina, Arvin Cabanela (Frontend Developer, QA Specialist)
  
  Albos, John Erwin Sanyo (Main Programmer, Backend Developer)
