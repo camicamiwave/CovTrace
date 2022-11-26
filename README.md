@@ -5,7 +5,11 @@ This system is a web application that collects and disseminates information abou
 # ABOUT US:
 QuaranTeam
  Abina, Arvin Cabanela (Frontend Developer, QA Specialist)
+ 
  Albos, John Erwin Sanyo (Main Programmer, Backend Developer)
+ 
  Biñas, Camila Garciano (Frontend Developer, UI Designer)
+ 
  Borje, Sean Michael Arriola (Frontend Developer, Prototype Designer, Error Handler)
+ 
  Velacruz, Xenia Angelica De Guzman (Fronted Developer, Designer, QA)
