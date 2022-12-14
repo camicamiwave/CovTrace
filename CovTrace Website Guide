@@ -1,0 +1,14 @@
+STEPS
+1. Install folium(TYPE: pip install folium)
+2. Install geocoder (TYPE: pip install geocoder)
+
+HEALTH OFFICIAL FEATURES
+- On the upper right corner of the website, you can see the emergency/medical bag icon. Under this, the admin/health official can see the list of confined patients and patients' details. The admin can update the status of the patient/s if the patient was recovered or died. All update can be seen on the dashboard (the 3 boxes above) .
+- On the upper right corner of the website, you can also see the "+Add New Patient." If clicked, there are 6 attributes that needed to be filled such as name, age, gender, Barangay, status, and date admitted. Once they submit, it will reflect on the database as well as on the patient details (medical bag icon) and on the map. 
+- MAP: Once they submitted the details on the add patient, the patient's location will automatically locate/track on the map
+
+UNVERIFIED USER FEATURES
+- Viewing page only
+
+LOG IN 
+- Once the admin/health official logged in on the website, they can also access the admin site of the django. And once they logged out, it will automatically logged out on the django as well.
